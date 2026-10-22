@@ -61,10 +61,19 @@ DIVIDE(
     COUNTROWS(delivery_events),
     0
 )
+```
+
+### Dynamic 95% SLA Benchmark
+```dax
 SLA Target = 0.95
+```
+
+### Cost Per Mile
+```dax
 Cost Per Mile = 
 DIVIDE(
     [Total Operational Expenses],
     [Total Fleet Mileage],
     0
 )
+```
